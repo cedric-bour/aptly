@@ -1,0 +1,18 @@
+services:
+    aptly-worker:
+        image: localhost/aptly:latest
+        volumes:
+        - /opt/aptly/data:/srv/aptly/data
+        - /opt/aptly/aptly.conf:/srv/aptly/.aptly.conf:ro
+        - /opt/aptly/mirror.sh:/srv/aptly/mirror.sh:ro
+        - /opt/aptly/mirror.py:/srv/aptly/mirror.py:ro
+        - /opt/aptly/aptly.py:/srv/aptly/aptly.py:ro
+        - /opt/aptly/repos.yaml:/srv/aptly/repos.yaml:ro
+    aptly-www:
+        image: httpd:latest
+        ports:
+        - 8080:80
+        volumes:
+        - /opt/aptly/data/pool:/srv/aptly/data/pool:ro
+        - /opt/aptly/data/public:/usr/local/apache2/htdocs:ro
+version: '3'

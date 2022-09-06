@@ -1,0 +1,199 @@
+---
+
+- name: ubuntu
+  url: http://old-releases.ubuntu.com/ubuntu
+  distributions:
+    - precise
+  components:
+    - 'main'
+  archs: ['amd64']
+
+# - name: ubuntu_alias
+#   url: http://old-releases.ubuntu.com/ubuntu
+#   override_path: archive.ubuntu.com/ubuntu
+#   distributions:
+#     - precise
+#   components:
+#     - 'main'
+#   archs: ['amd64']
+
+# - name: ubuntu
+#   url: http://old-releases.ubuntu.com/ubuntu
+#   override_path: archive.ubuntu.com/ubuntu
+#   distributions:
+#     - precise
+#     - precise-updates
+#     - precise-security
+#   components:
+#     - 'main'
+#     - 'restricted'
+#     - 'universe'
+#     - 'multiverse'
+#   archs: ['i386', 'amd64']
+
+# - name: ubuntu
+#   url: http://archive.ubuntu.com/ubuntu
+#   distributions:
+#     - xenial
+#     - xenial-updates
+#     - xenial-security
+#     - bionic
+#     - bionic-updates
+#     - bionic-security
+#     - focal
+#     - focal-updates
+#     - focal-security
+#     - jammy
+#     - jammy-updates
+#     - jammy-security
+#   components:
+#     - 'main'
+#     - 'restricted'
+#     - 'universe'
+#     - 'multiverse'
+#   archs: ['amd64']
+
+# - name: ubuntu
+#   url: http://archive.ubuntu.com/ubuntu
+#   distributions:
+#     - focal
+#     - focal-updates
+#     - focal-security
+#     - jammy
+#     - jammy-updates
+#     - jammy-security
+#   components:
+#     - 'main/debian-installer'
+#     - 'restricted/debian-installer'
+#     - 'universe/debian-installer'
+#     - 'multiverse/debian-installer'
+#   archs: ['amd64']
+
+# - name: debian
+#   url: http://ftp.debian.org/debian
+#   distributions:
+#     - jessie
+#     - jessie-updates
+#     - stretch
+#     - stretch-updates
+#     - buster
+#     - buster-updates
+#   components:
+#     - 'main'
+#     - 'contrib'
+#     - 'non-free'
+#   archs: ['amd64']
+
+# - name: debian
+#   url: http://security.debian.org
+#   distributions:
+#     - jessie/updates
+#     - stretch/updates
+#     - buster/updates
+#   components:
+#     - 'main'
+#     - 'contrib'
+#     - 'non-free'
+#   archs: ['amd64']
+
+# - name: lemonldap-ng
+#   url: https://lemonldap-ng.org/deb
+#   distributions:
+#     - stable
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: sublime-text
+#   url: http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu
+#   distributions:
+#     - xenial
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: libreoffice-6-4
+#   url: http://ppa.launchpad.net/libreoffice/libreoffice-6-4/ubuntu
+#   distributions:
+#     - bionic
+#     - focal
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: libreoffice-7-0
+#   url: http://ppa.launchpad.net/libreoffice/libreoffice-7-0/ubuntu
+#   distributions:
+#     - bionic
+#     - focal
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: haproxy-2.0
+#   url: http://ppa.launchpad.net/vbernat/haproxy-2.0/ubuntu
+#   distributions:
+#     - xenial
+#     - bionic
+#     - focal
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: haproxy-2.1
+#   url: http://ppa.launchpad.net/vbernat/haproxy-2.1/ubuntu
+#   distributions:
+#     - bionic
+#     - focal
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: haproxy-2.2
+#   url: http://ppa.launchpad.net/vbernat/haproxy-2.2/ubuntu
+#   distributions:
+#     - bionic
+#     - focal
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: openjdk-r
+#   url: http://ppa.launchpad.net/openjdk-r/ppa/ubuntu
+#   distributions:
+#     - precise
+#     - xenial
+#     - bionic
+#     - focal
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: hwraid
+#   url: http://hwraid.le-vert.net/debian
+#   distributions:
+#     - jessie
+#     - stretch
+#     - buster
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: ansible
+#   url: http://ppa.launchpad.net/ansible/ansible/ubuntu
+#   distributions:
+#     - precise
+#     - xenial
+#     - bionic
+#   components: ['main']
+#   archs: ['amd64']
+
+# - name: postgresql
+#   url: http://apt.postgresql.org/pub/repos/apt
+#   distributions:
+#     - xenial-pgdg
+#     - bionic-pgdg
+#     - focal-pgdg
+#   components:
+#     - 'main'
+#     - '9.1'
+#     - '9.6'
+#     - '11'
+#   archs: ['amd64']
+
+- name: jenkins
+  url: https://pkg.jenkins.io/debian-stable
+  distributions: ['binary/']
+  components: []
+  archs: ['amd64']

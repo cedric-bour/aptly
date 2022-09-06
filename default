@@ -1,0 +1,10 @@
+server {
+    listen 80;
+ 
+    root /srv/aptly/.aptly/public;
+ 
+    location / {
+        autoindex on;
+        try_files $uri $uri/ =404;
+    }
+}
